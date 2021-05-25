@@ -2,6 +2,7 @@ package com.sakura.tables.controller;
 
 import com.sakura.tables.entity.HelloWorldEntity;
 import com.sakura.tables.service.impl.HelloWorldServiceImpl;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -18,6 +19,7 @@ import java.util.List;
  */
 @RestController
 @RequestMapping("/HelloWorld")
+@Slf4j
 public class HelloWorldController {
 
     @Autowired
@@ -30,8 +32,13 @@ public class HelloWorldController {
      */
     @PostMapping("dataGrid")
     public PageInfo<HelloWorldEntity> dataGrid(@RequestBody HelloWorldEntity entity){
-        List<HelloWorldEntity> list = helloWorldService.dataGrid(entity);
-        PageInfo<HelloWorldEntity> pageInfo = new PageInfo<>(list);
-        return pageInfo;
+        try {
+            List<HelloWorldEntity> list = helloWorldService.dataGrid(entity);
+            PageInfo<HelloWorldEntity> pageInfo = new PageInfo<>(list);
+            return pageInfo;
+        }catch (Exception e){
+            log.error("出错啦!",e);
+            return null;
+        }
     }
 }

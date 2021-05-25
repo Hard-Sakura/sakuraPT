@@ -1,6 +1,8 @@
 package com.sakura.tables.entity;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.sakura.tables.dto.PageHelperJU;
+import org.springframework.format.annotation.DateTimeFormat;
 
 import java.util.Date;
 
@@ -21,6 +23,7 @@ public class HelloWorldEntity extends PageHelperJU {
     private String userPassword;
 
     /**创建时间*/
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private Date createDate;
 
     /**状态*/
