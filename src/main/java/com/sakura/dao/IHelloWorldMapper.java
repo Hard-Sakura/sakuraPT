@@ -1,7 +1,6 @@
-package com.sakura.tables.dao;
+package com.sakura.dao;
 
-import com.sakura.tables.entity.HelloWorldEntity;
-import org.apache.ibatis.annotations.Mapper;
+import com.sakura.entity.HelloWorldEntity;
 
 import java.util.List;
 

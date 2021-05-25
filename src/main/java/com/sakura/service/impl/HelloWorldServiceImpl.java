@@ -1,9 +1,9 @@
-package com.sakura.tables.service.impl;
+package com.sakura.service.impl;
 
 import com.github.pagehelper.PageHelper;
-import com.sakura.tables.dao.IHelloWorldMapper;
-import com.sakura.tables.entity.HelloWorldEntity;
-import com.sakura.tables.service.IHelloWorldService;
+import com.sakura.dao.IHelloWorldMapper;
+import com.sakura.entity.HelloWorldEntity;
+import com.sakura.service.IHelloWorldService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;

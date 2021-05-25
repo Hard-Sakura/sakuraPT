@@ -1,8 +1,7 @@
-package com.sakura.tables.entity;
+package com.sakura.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.sakura.tables.dto.PageHelperJU;
-import org.springframework.format.annotation.DateTimeFormat;
+import com.sakura.dto.PageHelperJU;
 
 import java.util.Date;
 

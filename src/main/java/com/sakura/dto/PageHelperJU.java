@@ -1,4 +1,4 @@
-package com.sakura.tables.dto;
+package com.sakura.dto;
 
 /**
  * @desc: 分页工具类

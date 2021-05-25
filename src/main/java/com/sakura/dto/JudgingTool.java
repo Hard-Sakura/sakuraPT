@@ -1,4 +1,4 @@
-package com.sakura.tables.dto;
+package com.sakura.dto;
 
 /**
  * @desc: boolean判断工具类

@@ -1,4 +1,4 @@
-package com.sakura.tables;
+package com.sakura;
 
 import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.boot.SpringApplication;

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.sakura.tables.dao.IHelloWorldMapper">
+<mapper namespace="com.sakura.dao.IHelloWorldMapper">
 
-  <resultMap id="BaseResultMap" type="com.sakura.tables.entity.HelloWorldEntity">
+  <resultMap id="BaseResultMap" type="com.sakura.entity.HelloWorldEntity">
     <id column="ID" jdbcType="VARCHAR" property="id" />
     <result column="USER_NAME" jdbcType="VARCHAR" property="userName" />
     <result column="USER_PASSWORD" jdbcType="VARCHAR" property="userPassword" />

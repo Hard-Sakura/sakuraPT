@@ -1,4 +1,4 @@
-package com.sakura.tables.dto;
+package com.sakura.dto;
 
 public class HelloWorldDto {
 }

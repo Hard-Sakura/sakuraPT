@@ -1,7 +1,7 @@
-package com.sakura.tables.controller;
+package com.sakura.controller;
 
-import com.sakura.tables.entity.HelloWorldEntity;
-import com.sakura.tables.service.impl.HelloWorldServiceImpl;
+import com.sakura.entity.HelloWorldEntity;
+import com.sakura.service.impl.HelloWorldServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
