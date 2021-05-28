@@ -1,7 +1,7 @@
-package com.sakura.entity;
+package com.tables.entity;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import com.sakura.dto.PageHelperJU;
+import com.tables.dto.PageHelperJU;
 
 import java.util.Date;
 

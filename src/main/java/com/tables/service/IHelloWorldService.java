@@ -1,6 +1,6 @@
-package com.sakura.service;
+package com.tables.service;
 
-import com.sakura.entity.HelloWorldEntity;
+import com.tables.entity.HelloWorldEntity;
 
 import java.util.List;
 

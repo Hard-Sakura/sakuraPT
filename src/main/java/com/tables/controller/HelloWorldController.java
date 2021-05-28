@@ -1,7 +1,8 @@
-package com.sakura.controller;
+package com.tables.controller;
 
-import com.sakura.entity.HelloWorldEntity;
-import com.sakura.service.impl.HelloWorldServiceImpl;
+import com.tables.entity.HelloWorldEntity;
+import com.tables.service.IHelloWorldService;
+import com.tables.service.impl.HelloWorldServiceImpl;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +24,7 @@ import java.util.List;
 public class HelloWorldController {
 
     @Autowired
-    private HelloWorldServiceImpl helloWorldService;
+    private IHelloWorldService helloWorldService;
 
     /**
      * @desc: 查询
